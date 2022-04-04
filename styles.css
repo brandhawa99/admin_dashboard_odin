@@ -1,5 +1,189 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: .125fr 1fr 1fr;
+}
+
+.header{
+    padding: 15px 20px;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.bell{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.face{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    flex: 4;
+    
+}
+
+.search >input[type=text]{
+    flex: 1; 
+    max-width: 550px ;
+    border-radius: 20px;
+    height: 30px;
+    background-color: #e2e8f0;
+    border: none;
+    padding: 5px 10px;
+}
+.bottom-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-logo{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.name-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.name-name > h2{
+    font-size: 1.3rem;
+
+}
+
+.name-logo > img{
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+.bottom-buttons{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-buttons >button{
+    max-width: 100px;
+    flex: 1;
+    font-size: .9rem;
+    background-color:#1992d4;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.sidebar{
+    grid-row: 1/5;
+    background-color: #1992d4;
+    color: white;
+    max-width: 300px;
+}
+
+.logo{
+    display: flex;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.sidebar-element{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:20px;
+}
+
+.sidebar-element:hover{
+    background-color: #187fb6;
+}
+
+.sidebar-elements{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+
+.content-container{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .25fr 1fr;
+}
+
+.your-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    gap: 20px;
+    padding: 10px 20px;
+}
+.content-heading{
+    grid-column: 0/2;
+    grid-row: 0/1;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 30px 20px;
+    border-radius: .5rem;
+    background-color: white;
+    border-left: 5px solid orange;
+
+}
+
+.content > p{
+    margin-top: 5px;
+    font-size: .8rem;
+}
+.share-buttons{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap:20px;
+    padding: 10px 5px
+}
+
+.title{
+    font-weight: bolder;
+}
+
+
+.trending{
+    grid-column: 2/3;
+}
+
 
